@@ -29,6 +29,10 @@ var InfoWindow = React.createClass({
     this.removeListeners();
   },
 
+  getInfoWindow: function getInfoWindow() {
+    return this.infoWindow;
+  },
+
   open: function open() {
     this.infoWindow.open(this.props.map);
   },
